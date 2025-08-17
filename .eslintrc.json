@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier" // 항상 맨 끝! Prettier와 충돌나는 룰 비활성화
+  ],
+  "rules": {
+    // 한 줄 길이 체크: 너무 빡세면 "warn"으로
+    "max-len": [
+      "warn",
+      { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }
+    ],
+    // 필요시 추가 커스터마이즈
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ]
+  }
+}
