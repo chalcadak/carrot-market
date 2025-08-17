@@ -6,6 +6,7 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
     "prettier" // 항상 맨 끝! Prettier와 충돌나는 룰 비활성화
   ],
   "rules": {
